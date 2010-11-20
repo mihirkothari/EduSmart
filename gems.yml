@@ -1,0 +1,8 @@
+--- 
+- name: declarative_authorization
+  install_options: --source http://gemcutter.org
+  version: ">= 0"
+- name: searchlogic
+  version: ">= 0"
+- name: prawn
+  version: = 0.6.3
