@@ -1,0 +1,18 @@
+class LoginExpires < ActiveRecord::Migration
+  def self.up
+    create_table :login_expires do |t|
+      t.column :created_at, :datetime
+      t.column :expire_at, :datetime
+      t.column :last_login_date, :datetime
+    end
+    create_default
+  end
+
+  def self.create_default
+    LoginExpire.create :created_at   =>  Time.now,:expire_at   =>   (7.days).since(Time.now) , :last_login_date => Time.now
+  end
+
+  def self.down
+    drop_table :login_expires
+  end
+end

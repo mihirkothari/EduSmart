@@ -1,0 +1,25 @@
+development:
+      host: localhost
+      adapter: mysql
+      database: maieutics
+      port: 3306
+      username: root
+      password: password
+
+test: &test
+      host: localhost
+      adapter: mysql
+      database: maieutics_test
+      port: 3306
+      username: admin
+      password:
+
+production:
+      host: localhost
+      adapter: mysql
+      database: maieutics
+      port: 3306
+      username: admin
+      password: 
+cucumber:
+  <<: *test

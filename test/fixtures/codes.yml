@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  code_category: MyString
+  code_id: 1
+  code_value: MyString
+
+two:
+  code_category: MyString
+  code_id: 1
+  code_value: MyString
